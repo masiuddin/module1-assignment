@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="LunchCheck">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app2.js"></script>
+    <title>Hello Coursera</title>
+  </head>
+  <body>
+    <div class="container" ng-controller="LunchCheckController">
+       <h1>Lunch Checker</h1>
+
+           <div >
+               <input id="lunch-menu" type="text"
+  						 ng-model="name">
+           </div>
+           <div>
+               <button ng-click="check()">Check If Too Much</button>
+           </div>
+           <div>
+             <!-- Your message can go here. -->
+  					 {{message}}
+           </div>
+     </div>
+  </body>
+</html>
